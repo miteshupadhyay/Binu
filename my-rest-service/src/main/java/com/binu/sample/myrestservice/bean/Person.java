@@ -3,9 +3,10 @@ package com.binu.sample.myrestservice.bean;
 public class Person {
 
 	
-	public int personId;
+	public Integer personId;
 	public String personName;
-	public int getPersonId() {
+	
+	public Integer getPersonId() {
 		return personId;
 	}
 	public String getPersonName() {
@@ -17,12 +18,15 @@ public class Person {
 	public void setPersonName(String personName) {
 		this.personName = personName;
 	}
-	public Person(int personId, String personName) {
+	public Person(Integer personId, String personName) {
 		super();
 		this.personId = personId;
 		this.personName = personName;
 	}
 	
+	public Person() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 }
