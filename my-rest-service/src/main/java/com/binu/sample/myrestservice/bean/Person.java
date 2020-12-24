@@ -1,9 +1,17 @@
 package com.binu.sample.myrestservice.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Entity
 public class Person {
 
-	
+	@Id
 	public Integer personId;
+	
+	@JsonIgnore
 	public String personName;
 	
 	public Integer getPersonId() {
